@@ -1,0 +1,1100 @@
+2019-10-31 15:45:22.103 [main] INFO  com.pan.love.LoveApplication - Starting LoveApplication on LAPTOP-0G7456OC with PID 77820 (D:\sendi\git\project\love\target\classes started by 89362 in D:\sendi\git\project\love)
+2019-10-31 15:45:22.108 [main] DEBUG com.pan.love.LoveApplication - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-31 15:45:22.108 [main] INFO  com.pan.love.LoveApplication - No active profile set, falling back to default profiles: default
+2019-10-31 15:45:23.446 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 15:45:23.448 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 15:45:23.479 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-10-31 15:45:23.822 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b6cb6f91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 15:45:24.318 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 15001 (http)
+2019-10-31 15:45:24.338 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-15001"]
+2019-10-31 15:45:24.352 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-10-31 15:45:24.353 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-31 15:45:24.485 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-10-31 15:45:24.485 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2308 ms
+2019-10-31 15:45:25.422 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 15:45:25.634 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 15:45:26.340 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-10-31 15:45:26.358 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-10-31 15:45:26.423 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-10-31 15:45:26.629 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-15001"]
+2019-10-31 15:45:26.661 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 15001 (http) with context path ''
+2019-10-31 15:45:26.665 [main] INFO  com.pan.love.LoveApplication - Started LoveApplication in 5.018 seconds (JVM running for 6.776)
+2019-10-31 15:46:10.571 [http-nio-15001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-31 15:46:10.571 [http-nio-15001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-10-31 15:46:10.579 [http-nio-15001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2019-10-31 15:46:10.635 [http-nio-15001-exec-1] INFO  c.pan.love.framework.config.redis.RedisCacheAspect - 开始使用缓存
+2019-10-31 15:46:10.636 [http-nio-15001-exec-1] INFO  c.pan.love.framework.config.redis.RedisCacheAspect - obj:QueryUserInVo(userName=string, loginName=null, phone=null, email=null)
+2019-10-31 15:46:10.637 [http-nio-15001-exec-1] INFO  c.pan.love.framework.config.redis.RedisCacheAspect - 生成的key[user:com.pan.love.system.service.impl.UserServiceImpl.queryUser_QueryUserInVo(userName=string, loginName=null, phone=null, email=null)]
+2019-10-31 15:46:10.650 [http-nio-15001-exec-1] INFO  c.pan.love.framework.config.redis.RedisCacheAspect - 缓存未调用，调用原方法,放入缓存
+2019-10-31 15:46:10.704 [http-nio-15001-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-10-31 15:46:10.782 [http-nio-15001-exec-1] DEBUG com.pan.love.system.mapper.UserMapper.queryUser - ==>  Preparing: select user_id,user_name,login_name,phone,email,head_url,create_time,update_time from sys_user WHERE user_name=? 
+2019-10-31 15:46:10.799 [http-nio-15001-exec-1] DEBUG com.pan.love.system.mapper.UserMapper.queryUser - ==> Parameters: string(String)
+2019-10-31 15:46:10.813 [http-nio-15001-exec-1] DEBUG com.pan.love.system.mapper.UserMapper.queryUser - <==      Total: 0
+2019-10-31 15:55:09.031 [Thread-9] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-31 15:55:09.035 [Thread-9] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-10-31 16:02:40.598 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.PropertyAction - In <property> element, either the "file" attribute alone, or the "resource" element alone, or both the "name" and "value" attributes must be set.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:167)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:220)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:118)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:289)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:264)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:226)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:203)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.pan.love.LoveApplication.main(LoveApplication.java:20)
+2019-10-31 16:03:01.182 [main] INFO  com.pan.love.LoveApplication - Starting LoveApplication on LAPTOP-0G7456OC with PID 73404 (D:\sendi\git\project\love\target\classes started by 89362 in D:\sendi\git\project\love)
+2019-10-31 16:03:01.186 [main] DEBUG com.pan.love.LoveApplication - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-31 16:03:01.186 [main] INFO  com.pan.love.LoveApplication - No active profile set, falling back to default profiles: default
+2019-10-31 16:03:02.274 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 16:03:02.280 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 16:03:02.317 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2019-10-31 16:03:02.825 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a8c438] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 16:03:03.301 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 15001 (http)
+2019-10-31 16:03:03.318 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:03:03.331 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-10-31 16:03:03.331 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-31 16:03:03.467 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-10-31 16:03:03.467 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2227 ms
+2019-10-31 16:03:04.364 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 16:03:04.569 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 16:03:05.449 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-10-31 16:03:05.474 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-10-31 16:03:05.521 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-10-31 16:03:05.732 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:03:05.767 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 15001 (http) with context path ''
+2019-10-31 16:03:05.770 [main] INFO  com.pan.love.LoveApplication - Started LoveApplication in 5.08 seconds (JVM running for 6.714)
+2019-10-31 16:09:05.847 [Thread-8] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-31 16:09:10.065 [main] INFO  com.pan.love.LoveApplication - Starting LoveApplication on LAPTOP-0G7456OC with PID 79028 (D:\sendi\git\project\love\target\classes started by 89362 in D:\sendi\git\project\love)
+2019-10-31 16:09:10.069 [main] DEBUG com.pan.love.LoveApplication - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-31 16:09:10.069 [main] INFO  com.pan.love.LoveApplication - No active profile set, falling back to default profiles: default
+2019-10-31 16:09:11.061 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 16:09:11.064 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 16:09:11.100 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2019-10-31 16:09:11.474 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$905ba438] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 16:09:11.891 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 15001 (http)
+2019-10-31 16:09:11.904 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:09:11.916 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-10-31 16:09:11.916 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-31 16:09:12.023 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-10-31 16:09:12.023 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1904 ms
+2019-10-31 16:09:12.880 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 16:09:13.052 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 16:09:13.659 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-10-31 16:09:13.677 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-10-31 16:09:13.712 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-10-31 16:09:13.874 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:09:13.903 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 15001 (http) with context path ''
+2019-10-31 16:09:13.906 [main] INFO  com.pan.love.LoveApplication - Started LoveApplication in 4.298 seconds (JVM running for 5.93)
+2019-10-31 16:09:53.564 [Thread-10] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-31 16:09:57.935 [main] INFO  com.pan.love.LoveApplication - Starting LoveApplication on LAPTOP-0G7456OC with PID 920 (D:\sendi\git\project\love\target\classes started by 89362 in D:\sendi\git\project\love)
+2019-10-31 16:09:57.939 [main] DEBUG com.pan.love.LoveApplication - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-31 16:09:57.940 [main] INFO  com.pan.love.LoveApplication - No active profile set, falling back to default profiles: default
+2019-10-31 16:09:58.898 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 16:09:58.902 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 16:09:58.934 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2019-10-31 16:09:59.288 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ed689622] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 16:09:59.707 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 15001 (http)
+2019-10-31 16:09:59.722 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:09:59.734 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-10-31 16:09:59.734 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-31 16:09:59.849 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-10-31 16:09:59.850 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1851 ms
+2019-10-31 16:10:00.736 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 16:10:00.911 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 16:10:01.516 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-10-31 16:10:01.532 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-10-31 16:10:01.564 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-10-31 16:10:01.727 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:10:01.763 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 15001 (http) with context path ''
+2019-10-31 16:10:01.765 [main] INFO  com.pan.love.LoveApplication - Started LoveApplication in 4.314 seconds (JVM running for 5.918)
+2019-10-31 16:16:42.811 [Thread-10] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-31 16:16:47.182 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@503ecb24 - There is no conversion class registered for composite conversion word [Cyan]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@503ecb24 - Failed to create converter for [%Cyan] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@503ecb24 - There is no conversion class registered for composite conversion word [Orange]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@503ecb24 - Failed to create converter for [%Orange] keyword
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:167)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:220)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:118)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:289)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:264)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:226)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:203)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.pan.love.LoveApplication.main(LoveApplication.java:20)
+2019-10-31 16:17:31.900 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@7cbd9d24 - There is no conversion class registered for conversion word [Cyan]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@7cbd9d24 - [Cyan] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@7cbd9d24 - There is no conversion class registered for composite conversion word [Orange]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@7cbd9d24 - Failed to create converter for [%Orange] keyword
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:167)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:220)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:118)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:289)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:264)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:226)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:203)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.pan.love.LoveApplication.main(LoveApplication.java:20)
+2019-10-31 16:18:05.963 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@409c54f - There is no conversion class registered for composite conversion word [Gold]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@409c54f - Failed to create converter for [%Gold] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@409c54f - There is no conversion class registered for composite conversion word [Orange]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@409c54f - Failed to create converter for [%Orange] keyword
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:167)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:220)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:118)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:289)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:264)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:226)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:203)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.pan.love.LoveApplication.main(LoveApplication.java:20)
+2019-10-31 16:18:43.658 [main] INFO  com.pan.love.LoveApplication - Starting LoveApplication on LAPTOP-0G7456OC with PID 77708 (D:\sendi\git\project\love\target\classes started by 89362 in D:\sendi\git\project\love)
+2019-10-31 16:18:43.664 [main] DEBUG com.pan.love.LoveApplication - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-31 16:18:43.665 [main] INFO  com.pan.love.LoveApplication - No active profile set, falling back to default profiles: default
+2019-10-31 16:18:44.640 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 16:18:44.642 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 16:18:44.675 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+2019-10-31 16:18:45.025 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$18f50032] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 16:18:45.451 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 15001 (http)
+2019-10-31 16:18:45.465 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:18:45.474 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-10-31 16:18:45.474 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-31 16:18:45.591 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-10-31 16:18:45.592 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1862 ms
+2019-10-31 16:18:46.405 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 16:18:46.578 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 16:18:47.177 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-10-31 16:18:47.199 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-10-31 16:18:47.243 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-10-31 16:18:47.409 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:18:47.444 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 15001 (http) with context path ''
+2019-10-31 16:18:47.448 [main] INFO  com.pan.love.LoveApplication - Started LoveApplication in 4.278 seconds (JVM running for 5.827)
+2019-10-31 16:19:02.746 [Thread-9] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-31 16:19:07.113 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@7d9e8ef7 - There is no conversion class registered for composite conversion word [Orange]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@7d9e8ef7 - Failed to create converter for [%Orange] keyword
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:167)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:220)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:118)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:289)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:264)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:226)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:203)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.pan.love.LoveApplication.main(LoveApplication.java:20)
+2019-10-31 16:19:26.738 [main] INFO  com.pan.love.LoveApplication - Starting LoveApplication on LAPTOP-0G7456OC with PID 80204 (D:\sendi\git\project\love\target\classes started by 89362 in D:\sendi\git\project\love)
+2019-10-31 16:19:26.742 [main] DEBUG com.pan.love.LoveApplication - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-31 16:19:26.742 [main] INFO  com.pan.love.LoveApplication - No active profile set, falling back to default profiles: default
+2019-10-31 16:19:27.975 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 16:19:27.978 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 16:19:28.031 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36ms. Found 0 repository interfaces.
+2019-10-31 16:19:28.438 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$35d4c2b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 16:19:28.820 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 15001 (http)
+2019-10-31 16:19:28.832 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:19:28.838 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-10-31 16:19:28.838 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-31 16:19:28.937 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-10-31 16:19:28.937 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2104 ms
+2019-10-31 16:19:29.793 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 16:19:29.935 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 16:19:30.414 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-10-31 16:19:30.429 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-10-31 16:19:30.458 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-10-31 16:19:30.614 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:19:30.665 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 15001 (http) with context path ''
+2019-10-31 16:19:30.668 [main] INFO  com.pan.love.LoveApplication - Started LoveApplication in 4.369 seconds (JVM running for 6.168)
+2019-10-31 16:23:57.448 [Thread-8] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-31 16:24:01.640 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@41005828 - There is no conversion class registered for composite conversion word [Yellow]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@41005828 - Failed to create converter for [%Yellow] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@41005828 - There is no conversion class registered for composite conversion word [Orange]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@41005828 - Failed to create converter for [%Orange] keyword
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:167)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:220)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:118)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:289)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:264)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:226)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:203)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.pan.love.LoveApplication.main(LoveApplication.java:20)
+2019-10-31 16:24:53.217 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@3081f72c - There is no conversion class registered for composite conversion word [Orange]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@3081f72c - Failed to create converter for [%Orange] keyword
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:167)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:220)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:118)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:289)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:264)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:226)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:203)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.pan.love.LoveApplication.main(LoveApplication.java:20)
+2019-10-31 16:25:10.545 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@4b6e2263 - There is no conversion class registered for composite conversion word [orange]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@4b6e2263 - Failed to create converter for [%orange] keyword
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:167)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:220)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:118)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:289)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:264)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:226)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:203)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.pan.love.LoveApplication.main(LoveApplication.java:20)
+2019-10-31 16:25:45.505 [main] INFO  com.pan.love.LoveApplication - Starting LoveApplication on LAPTOP-0G7456OC with PID 77112 (D:\sendi\git\project\love\target\classes started by 89362 in D:\sendi\git\project\love)
+2019-10-31 16:25:45.508 [main] DEBUG com.pan.love.LoveApplication - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-31 16:25:45.509 [main] INFO  com.pan.love.LoveApplication - No active profile set, falling back to default profiles: default
+2019-10-31 16:25:46.417 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 16:25:46.419 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 16:25:46.447 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2019-10-31 16:25:46.779 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d4b53e4c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 16:25:47.177 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 15001 (http)
+2019-10-31 16:25:47.189 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:25:47.201 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-10-31 16:25:47.201 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-31 16:25:47.338 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-10-31 16:25:47.338 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1780 ms
+2019-10-31 16:25:48.228 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 16:25:48.390 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 16:25:48.950 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-10-31 16:25:48.970 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-10-31 16:25:48.999 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-10-31 16:25:49.141 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:25:49.170 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 15001 (http) with context path ''
+2019-10-31 16:25:49.173 [main] INFO  com.pan.love.LoveApplication - Started LoveApplication in 4.078 seconds (JVM running for 5.862)
+2019-10-31 16:26:25.159 [Thread-9] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-31 16:26:29.417 [main] INFO  com.pan.love.LoveApplication - Starting LoveApplication on LAPTOP-0G7456OC with PID 36596 (D:\sendi\git\project\love\target\classes started by 89362 in D:\sendi\git\project\love)
+2019-10-31 16:26:29.420 [main] DEBUG com.pan.love.LoveApplication - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-31 16:26:29.420 [main] INFO  com.pan.love.LoveApplication - No active profile set, falling back to default profiles: default
+2019-10-31 16:26:30.350 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 16:26:30.352 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 16:26:30.385 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2019-10-31 16:26:30.754 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aac64995] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 16:26:31.178 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 15001 (http)
+2019-10-31 16:26:31.193 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:26:31.203 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-10-31 16:26:31.203 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-31 16:26:31.316 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-10-31 16:26:31.316 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1844 ms
+2019-10-31 16:26:32.144 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 16:26:32.328 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 16:26:32.953 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-10-31 16:26:32.975 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-10-31 16:26:33.008 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-10-31 16:26:33.173 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:26:33.209 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 15001 (http) with context path ''
+2019-10-31 16:26:33.212 [main] INFO  com.pan.love.LoveApplication - Started LoveApplication in 4.233 seconds (JVM running for 5.986)
+2019-10-31 16:27:39.900 [Thread-10] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-31 16:27:44.690 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@36a5cabc - There is no conversion class registered for composite conversion word [pink]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@36a5cabc - Failed to create converter for [%pink] keyword
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:167)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:220)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:118)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:289)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:264)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:226)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:203)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.pan.love.LoveApplication.main(LoveApplication.java:20)
+2019-10-31 16:28:55.991 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@51133c06 - There is no conversion class registered for composite conversion word [gold]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@51133c06 - Failed to create converter for [%gold] keyword
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:167)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:220)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:118)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:289)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:264)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:226)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:203)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.pan.love.LoveApplication.main(LoveApplication.java:20)
+2019-10-31 16:29:06.988 [main] INFO  com.pan.love.LoveApplication - Starting LoveApplication on LAPTOP-0G7456OC with PID 79424 (D:\sendi\git\project\love\target\classes started by 89362 in D:\sendi\git\project\love)
+2019-10-31 16:29:06.992 [main] DEBUG com.pan.love.LoveApplication - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-31 16:29:06.993 [main] INFO  com.pan.love.LoveApplication - No active profile set, falling back to default profiles: default
+2019-10-31 16:29:08.007 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 16:29:08.009 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 16:29:08.043 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+2019-10-31 16:29:08.414 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e330d321] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 16:29:08.929 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 15001 (http)
+2019-10-31 16:29:08.944 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:29:08.956 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-10-31 16:29:08.956 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-31 16:29:09.077 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-10-31 16:29:09.077 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2024 ms
+2019-10-31 16:29:09.960 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 16:29:10.150 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 16:29:10.720 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-10-31 16:29:10.737 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-10-31 16:29:10.769 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-10-31 16:29:10.943 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:29:10.977 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 15001 (http) with context path ''
+2019-10-31 16:29:10.980 [main] INFO  com.pan.love.LoveApplication - Started LoveApplication in 4.411 seconds (JVM running for 6.186)
+2019-10-31 16:29:29.936 [Thread-10] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-31 16:29:33.917 [main] INFO  com.pan.love.LoveApplication - Starting LoveApplication on LAPTOP-0G7456OC with PID 70636 (D:\sendi\git\project\love\target\classes started by 89362 in D:\sendi\git\project\love)
+2019-10-31 16:29:33.920 [main] DEBUG com.pan.love.LoveApplication - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-31 16:29:33.921 [main] INFO  com.pan.love.LoveApplication - No active profile set, falling back to default profiles: default
+2019-10-31 16:29:34.912 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 16:29:34.914 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 16:29:34.946 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2019-10-31 16:29:35.304 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$14971f41] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 16:29:35.750 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 15001 (http)
+2019-10-31 16:29:35.766 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:29:35.777 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-10-31 16:29:35.777 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-31 16:29:35.900 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-10-31 16:29:35.901 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1921 ms
+2019-10-31 16:29:36.863 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 16:29:37.050 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 16:29:37.648 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-10-31 16:29:37.666 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-10-31 16:29:37.697 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-10-31 16:29:37.840 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:29:37.872 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 15001 (http) with context path ''
+2019-10-31 16:29:37.875 [main] INFO  com.pan.love.LoveApplication - Started LoveApplication in 4.374 seconds (JVM running for 6.101)
+2019-10-31 16:30:19.336 [Thread-10] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[31m2019-10-31 16:30:23.291[0;39m | [main] | [34mINFO [0;39m | [33mcom.pan.love.LoveApplication[0;39m | - Starting LoveApplication on LAPTOP-0G7456OC with PID 71012 (D:\sendi\git\project\love\target\classes started by 89362 in D:\sendi\git\project\love)
+[31m2019-10-31 16:30:23.295[0;39m | [main] | [34mDEBUG[0;39m | [33mcom.pan.love.LoveApplication[0;39m | - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[31m2019-10-31 16:30:23.296[0;39m | [main] | [34mINFO [0;39m | [33mcom.pan.love.LoveApplication[0;39m | - No active profile set, falling back to default profiles: default
+[31m2019-10-31 16:30:24.340[0;39m | [main] | [34mINFO [0;39m | [33mo.s.d.r.config.RepositoryConfigurationDelegate[0;39m | - Multiple Spring Data modules found, entering strict repository configuration mode!
+[31m2019-10-31 16:30:24.342[0;39m | [main] | [34mINFO [0;39m | [33mo.s.d.r.config.RepositoryConfigurationDelegate[0;39m | - Bootstrapping Spring Data repositories in DEFAULT mode.
+[31m2019-10-31 16:30:24.378[0;39m | [main] | [34mINFO [0;39m | [33mo.s.d.r.config.RepositoryConfigurationDelegate[0;39m | - Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+[31m2019-10-31 16:30:24.810[0;39m | [main] | [34mINFO [0;39m | [33mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m | - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e135c039] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31m2019-10-31 16:30:25.266[0;39m | [main] | [34mINFO [0;39m | [33mo.s.boot.web.embedded.tomcat.TomcatWebServer[0;39m | - Tomcat initialized with port(s): 15001 (http)
+[31m2019-10-31 16:30:25.282[0;39m | [main] | [34mINFO [0;39m | [33morg.apache.coyote.http11.Http11NioProtocol[0;39m | - Initializing ProtocolHandler ["http-nio-15001"]
+[31m2019-10-31 16:30:25.293[0;39m | [main] | [34mINFO [0;39m | [33morg.apache.catalina.core.StandardService[0;39m | - Starting service [Tomcat]
+[31m2019-10-31 16:30:25.293[0;39m | [main] | [34mINFO [0;39m | [33morg.apache.catalina.core.StandardEngine[0;39m | - Starting Servlet engine: [Apache Tomcat/9.0.26]
+[31m2019-10-31 16:30:25.410[0;39m | [main] | [34mINFO [0;39m | [33mo.a.c.core.ContainerBase.[Tomcat].[localhost].[/][0;39m | - Initializing Spring embedded WebApplicationContext
+[31m2019-10-31 16:30:25.410[0;39m | [main] | [34mINFO [0;39m | [33morg.springframework.web.context.ContextLoader[0;39m | - Root WebApplicationContext: initialization completed in 2063 ms
+[31m2019-10-31 16:30:26.274[0;39m | [main] | [34mINFO [0;39m | [33ms.d.s.w.PropertySourcedRequestMappingHandlerMapping[0;39m | - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[31m2019-10-31 16:30:26.475[0;39m | [main] | [34mINFO [0;39m | [33mo.s.scheduling.concurrent.ThreadPoolTaskExecutor[0;39m | - Initializing ExecutorService 'applicationTaskExecutor'
+[31m2019-10-31 16:30:27.057[0;39m | [main] | [34mINFO [0;39m | [33ms.d.s.web.plugins.DocumentationPluginsBootstrapper[0;39m | - Context refreshed
+[31m2019-10-31 16:30:27.081[0;39m | [main] | [34mINFO [0;39m | [33ms.d.s.web.plugins.DocumentationPluginsBootstrapper[0;39m | - Found 1 custom documentation plugin(s)
+[31m2019-10-31 16:30:27.119[0;39m | [main] | [34mINFO [0;39m | [33ms.d.spring.web.scanners.ApiListingReferenceScanner[0;39m | - Scanning for api listing references
+[31m2019-10-31 16:30:27.321[0;39m | [main] | [34mINFO [0;39m | [33morg.apache.coyote.http11.Http11NioProtocol[0;39m | - Starting ProtocolHandler ["http-nio-15001"]
+[31m2019-10-31 16:30:27.354[0;39m | [main] | [34mINFO [0;39m | [33mo.s.boot.web.embedded.tomcat.TomcatWebServer[0;39m | - Tomcat started on port(s): 15001 (http) with context path ''
+[31m2019-10-31 16:30:27.358[0;39m | [main] | [34mINFO [0;39m | [33mcom.pan.love.LoveApplication[0;39m | - Started LoveApplication in 4.539 seconds (JVM running for 6.24)
+[31m2019-10-31 16:39:52.488[0;39m | [Thread-9] | [34mINFO [0;39m | [33mo.s.scheduling.concurrent.ThreadPoolTaskExecutor[0;39m | - Shutting down ExecutorService 'applicationTaskExecutor'
+[31m2019-10-31 16:39:56.457[0;39m [main] [34mINFO [0;39m [33mcom.pan.love.LoveApplication[0;39m - Starting LoveApplication on LAPTOP-0G7456OC with PID 76672 (D:\sendi\git\project\love\target\classes started by 89362 in D:\sendi\git\project\love)
+[31m2019-10-31 16:39:56.461[0;39m [main] [34mDEBUG[0;39m [33mcom.pan.love.LoveApplication[0;39m - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+[31m2019-10-31 16:39:56.461[0;39m [main] [34mINFO [0;39m [33mcom.pan.love.LoveApplication[0;39m - No active profile set, falling back to default profiles: default
+[31m2019-10-31 16:39:57.470[0;39m [main] [34mINFO [0;39m [33mo.s.d.r.config.RepositoryConfigurationDelegate[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode!
+[31m2019-10-31 16:39:57.473[0;39m [main] [34mINFO [0;39m [33mo.s.d.r.config.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data repositories in DEFAULT mode.
+[31m2019-10-31 16:39:57.498[0;39m [main] [34mINFO [0;39m [33mo.s.d.r.config.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+[31m2019-10-31 16:39:57.807[0;39m [main] [34mINFO [0;39m [33mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4645b11] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31m2019-10-31 16:39:58.164[0;39m [main] [34mINFO [0;39m [33mo.s.boot.web.embedded.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port(s): 15001 (http)
+[31m2019-10-31 16:39:58.177[0;39m [main] [34mINFO [0;39m [33morg.apache.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-15001"]
+[31m2019-10-31 16:39:58.188[0;39m [main] [34mINFO [0;39m [33morg.apache.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+[31m2019-10-31 16:39:58.188[0;39m [main] [34mINFO [0;39m [33morg.apache.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.26]
+[31m2019-10-31 16:39:58.290[0;39m [main] [34mINFO [0;39m [33mo.a.c.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+[31m2019-10-31 16:39:58.291[0;39m [main] [34mINFO [0;39m [33morg.springframework.web.context.ContextLoader[0;39m - Root WebApplicationContext: initialization completed in 1756 ms
+[31m2019-10-31 16:39:59.107[0;39m [main] [34mINFO [0;39m [33ms.d.s.w.PropertySourcedRequestMappingHandlerMapping[0;39m - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[31m2019-10-31 16:39:59.278[0;39m [main] [34mINFO [0;39m [33mo.s.scheduling.concurrent.ThreadPoolTaskExecutor[0;39m - Initializing ExecutorService 'applicationTaskExecutor'
+[31m2019-10-31 16:39:59.913[0;39m [main] [34mINFO [0;39m [33ms.d.s.web.plugins.DocumentationPluginsBootstrapper[0;39m - Context refreshed
+[31m2019-10-31 16:39:59.933[0;39m [main] [34mINFO [0;39m [33ms.d.s.web.plugins.DocumentationPluginsBootstrapper[0;39m - Found 1 custom documentation plugin(s)
+[31m2019-10-31 16:39:59.970[0;39m [main] [34mINFO [0;39m [33ms.d.spring.web.scanners.ApiListingReferenceScanner[0;39m - Scanning for api listing references
+[31m2019-10-31 16:40:00.151[0;39m [main] [34mINFO [0;39m [33morg.apache.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-15001"]
+[31m2019-10-31 16:40:00.184[0;39m [main] [34mINFO [0;39m [33mo.s.boot.web.embedded.tomcat.TomcatWebServer[0;39m - Tomcat started on port(s): 15001 (http) with context path ''
+[31m2019-10-31 16:40:00.187[0;39m [main] [34mINFO [0;39m [33mcom.pan.love.LoveApplication[0;39m - Started LoveApplication in 4.192 seconds (JVM running for 5.692)
+[31m2019-10-31 16:40:26.057[0;39m [Thread-8] [34mINFO [0;39m [33mo.s.scheduling.concurrent.ThreadPoolTaskExecutor[0;39m - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-31 16:40:30.196 [main] [34mINFO [0;39m [33mcom.pan.love.LoveApplication[0;39m - Starting LoveApplication on LAPTOP-0G7456OC with PID 74136 (D:\sendi\git\project\love\target\classes started by 89362 in D:\sendi\git\project\love)
+2019-10-31 16:40:30.201 [main] [34mDEBUG[0;39m [33mcom.pan.love.LoveApplication[0;39m - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-31 16:40:30.201 [main] [34mINFO [0;39m [33mcom.pan.love.LoveApplication[0;39m - No active profile set, falling back to default profiles: default
+2019-10-31 16:40:31.243 [main] [34mINFO [0;39m [33mo.s.d.r.config.RepositoryConfigurationDelegate[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 16:40:31.245 [main] [34mINFO [0;39m [33mo.s.d.r.config.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 16:40:31.276 [main] [34mINFO [0;39m [33mo.s.d.r.config.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-10-31 16:40:31.656 [main] [34mINFO [0;39m [33mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bb0554a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 16:40:32.062 [main] [34mINFO [0;39m [33mo.s.boot.web.embedded.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port(s): 15001 (http)
+2019-10-31 16:40:32.078 [main] [34mINFO [0;39m [33morg.apache.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:40:32.090 [main] [34mINFO [0;39m [33morg.apache.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2019-10-31 16:40:32.091 [main] [34mINFO [0;39m [33morg.apache.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-31 16:40:32.229 [main] [34mINFO [0;39m [33mo.a.c.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2019-10-31 16:40:32.232 [main] [34mINFO [0;39m [33morg.springframework.web.context.ContextLoader[0;39m - Root WebApplicationContext: initialization completed in 1973 ms
+2019-10-31 16:40:33.295 [main] [34mINFO [0;39m [33ms.d.s.w.PropertySourcedRequestMappingHandlerMapping[0;39m - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 16:40:33.518 [main] [34mINFO [0;39m [33mo.s.scheduling.concurrent.ThreadPoolTaskExecutor[0;39m - Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 16:40:34.151 [main] [34mINFO [0;39m [33ms.d.s.web.plugins.DocumentationPluginsBootstrapper[0;39m - Context refreshed
+2019-10-31 16:40:34.168 [main] [34mINFO [0;39m [33ms.d.s.web.plugins.DocumentationPluginsBootstrapper[0;39m - Found 1 custom documentation plugin(s)
+2019-10-31 16:40:34.197 [main] [34mINFO [0;39m [33ms.d.spring.web.scanners.ApiListingReferenceScanner[0;39m - Scanning for api listing references
+2019-10-31 16:40:34.350 [main] [34mINFO [0;39m [33morg.apache.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:40:34.378 [main] [34mINFO [0;39m [33mo.s.boot.web.embedded.tomcat.TomcatWebServer[0;39m - Tomcat started on port(s): 15001 (http) with context path ''
+2019-10-31 16:40:34.380 [main] [34mINFO [0;39m [33mcom.pan.love.LoveApplication[0;39m - Started LoveApplication in 4.715 seconds (JVM running for 6.399)
+2019-10-31 16:41:14.362 [Thread-10] [34mINFO [0;39m [33mo.s.scheduling.concurrent.ThreadPoolTaskExecutor[0;39m - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-31 16:41:18.338 [main] [34mINFO [0;39m [33mcom.pan.love.LoveApplication[0;39m : Starting LoveApplication on LAPTOP-0G7456OC with PID 78660 (D:\sendi\git\project\love\target\classes started by 89362 in D:\sendi\git\project\love)
+2019-10-31 16:41:18.342 [main] [34mDEBUG[0;39m [33mcom.pan.love.LoveApplication[0;39m : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-31 16:41:18.342 [main] [34mINFO [0;39m [33mcom.pan.love.LoveApplication[0;39m : No active profile set, falling back to default profiles: default
+2019-10-31 16:41:19.221 [main] [34mINFO [0;39m [33mo.s.d.r.config.RepositoryConfigurationDelegate[0;39m : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 16:41:19.223 [main] [34mINFO [0;39m [33mo.s.d.r.config.RepositoryConfigurationDelegate[0;39m : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 16:41:19.252 [main] [34mINFO [0;39m [33mo.s.d.r.config.RepositoryConfigurationDelegate[0;39m : Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2019-10-31 16:41:19.613 [main] [34mINFO [0;39m [33mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fba0e363] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 16:41:20.006 [main] [34mINFO [0;39m [33mo.s.boot.web.embedded.tomcat.TomcatWebServer[0;39m : Tomcat initialized with port(s): 15001 (http)
+2019-10-31 16:41:20.022 [main] [34mINFO [0;39m [33morg.apache.coyote.http11.Http11NioProtocol[0;39m : Initializing ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:41:20.032 [main] [34mINFO [0;39m [33morg.apache.catalina.core.StandardService[0;39m : Starting service [Tomcat]
+2019-10-31 16:41:20.032 [main] [34mINFO [0;39m [33morg.apache.catalina.core.StandardEngine[0;39m : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-31 16:41:20.136 [main] [34mINFO [0;39m [33mo.a.c.core.ContainerBase.[Tomcat].[localhost].[/][0;39m : Initializing Spring embedded WebApplicationContext
+2019-10-31 16:41:20.137 [main] [34mINFO [0;39m [33morg.springframework.web.context.ContextLoader[0;39m : Root WebApplicationContext: initialization completed in 1737 ms
+2019-10-31 16:41:20.962 [main] [34mINFO [0;39m [33ms.d.s.w.PropertySourcedRequestMappingHandlerMapping[0;39m : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 16:41:21.137 [main] [34mINFO [0;39m [33mo.s.scheduling.concurrent.ThreadPoolTaskExecutor[0;39m : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 16:41:21.696 [main] [34mINFO [0;39m [33ms.d.s.web.plugins.DocumentationPluginsBootstrapper[0;39m : Context refreshed
+2019-10-31 16:41:21.715 [main] [34mINFO [0;39m [33ms.d.s.web.plugins.DocumentationPluginsBootstrapper[0;39m : Found 1 custom documentation plugin(s)
+2019-10-31 16:41:21.750 [main] [34mINFO [0;39m [33ms.d.spring.web.scanners.ApiListingReferenceScanner[0;39m : Scanning for api listing references
+2019-10-31 16:41:21.911 [main] [34mINFO [0;39m [33morg.apache.coyote.http11.Http11NioProtocol[0;39m : Starting ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:41:21.943 [main] [34mINFO [0;39m [33mo.s.boot.web.embedded.tomcat.TomcatWebServer[0;39m : Tomcat started on port(s): 15001 (http) with context path ''
+2019-10-31 16:41:21.946 [main] [34mINFO [0;39m [33mcom.pan.love.LoveApplication[0;39m : Started LoveApplication in 4.037 seconds (JVM running for 5.632)
+2019-10-31 16:42:46.132 [Thread-10] [34mINFO [0;39m [33mo.s.scheduling.concurrent.ThreadPoolTaskExecutor[0;39m : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-31 16:42:50.244 [main] INFO  com.pan.love.LoveApplication : Starting LoveApplication on LAPTOP-0G7456OC with PID 79160 (D:\sendi\git\project\love\target\classes started by 89362 in D:\sendi\git\project\love)
+2019-10-31 16:42:50.247 [main] DEBUG com.pan.love.LoveApplication : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-31 16:42:50.247 [main] INFO  com.pan.love.LoveApplication : No active profile set, falling back to default profiles: default
+2019-10-31 16:42:51.127 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 16:42:51.129 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 16:42:51.163 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2019-10-31 16:42:51.524 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$39a0ad68] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 16:42:51.931 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 15001 (http)
+2019-10-31 16:42:51.946 [main] INFO  org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:42:51.957 [main] INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2019-10-31 16:42:51.957 [main] INFO  org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-31 16:42:52.077 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2019-10-31 16:42:52.077 [main] INFO  org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1781 ms
+2019-10-31 16:42:52.980 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 16:42:53.213 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 16:42:53.826 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2019-10-31 16:42:53.844 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-10-31 16:42:53.871 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2019-10-31 16:42:54.029 [main] INFO  org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-15001"]
+2019-10-31 16:42:54.060 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 15001 (http) with context path ''
+2019-10-31 16:42:54.063 [main] INFO  com.pan.love.LoveApplication : Started LoveApplication in 4.23 seconds (JVM running for 5.823)
+2019-10-31 16:45:41.500 [http-nio-15001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-31 16:45:41.500 [http-nio-15001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2019-10-31 16:45:41.508 [http-nio-15001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet : Completed initialization in 8 ms
+2019-10-31 16:45:41.564 [http-nio-15001-exec-1] INFO  c.pan.love.framework.config.redis.RedisCacheAspect : 开始使用缓存
+2019-10-31 16:45:41.565 [http-nio-15001-exec-1] INFO  c.pan.love.framework.config.redis.RedisCacheAspect : obj:QueryUserInVo(userName=string, loginName=null, phone=null, email=null)
+2019-10-31 16:45:41.566 [http-nio-15001-exec-1] INFO  c.pan.love.framework.config.redis.RedisCacheAspect : 生成的key[user:com.pan.love.system.service.impl.UserServiceImpl.queryUser_QueryUserInVo(userName=string, loginName=null, phone=null, email=null)]
+2019-10-31 16:45:41.580 [http-nio-15001-exec-1] INFO  c.pan.love.framework.config.redis.RedisCacheAspect : 缓存未调用，调用原方法,放入缓存
+2019-10-31 16:45:41.640 [http-nio-15001-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource : {dataSource-1} inited
+2019-10-31 16:45:41.725 [http-nio-15001-exec-1] DEBUG com.pan.love.system.mapper.UserMapper.queryUser : ==>  Preparing: select user_id,user_name,login_name,phone,email,head_url,create_time,update_time from sys_user WHERE user_name=? 
+2019-10-31 16:45:41.746 [http-nio-15001-exec-1] DEBUG com.pan.love.system.mapper.UserMapper.queryUser : ==> Parameters: string(String)
+2019-10-31 16:45:41.763 [http-nio-15001-exec-1] DEBUG com.pan.love.system.mapper.UserMapper.queryUser : <==      Total: 0
+2019-10-31 16:45:53.170 [http-nio-15001-exec-2] INFO  c.pan.love.framework.config.redis.RedisCacheAspect : 开始使用缓存
+2019-10-31 16:45:53.170 [http-nio-15001-exec-2] INFO  c.pan.love.framework.config.redis.RedisCacheAspect : obj:QueryUserInVo(userName=string, loginName=null, phone=null, email=null)
+2019-10-31 16:45:53.170 [http-nio-15001-exec-2] INFO  c.pan.love.framework.config.redis.RedisCacheAspect : 生成的key[user:com.pan.love.system.service.impl.UserServiceImpl.queryUser_QueryUserInVo(userName=string, loginName=null, phone=null, email=null)]
+2019-10-31 16:45:53.171 [http-nio-15001-exec-2] INFO  c.pan.love.framework.config.redis.RedisCacheAspect : 缓存存在
+2019-10-31 18:07:09.455 [Thread-8] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-31 18:07:09.465 [Thread-8] INFO  com.alibaba.druid.pool.DruidDataSource : {dataSource-1} closed
+2019-10-31 18:07:17.568 [main] INFO  com.pan.love.LoveApplication : Starting LoveApplication on LAPTOP-0G7456OC with PID 81452 (D:\sendi\git\project\love\target\classes started by 89362 in D:\sendi\git\project\love)
+2019-10-31 18:07:17.576 [main] DEBUG com.pan.love.LoveApplication : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-31 18:07:17.577 [main] INFO  com.pan.love.LoveApplication : No active profile set, falling back to default profiles: default
+2019-10-31 18:07:18.731 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 18:07:18.734 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 18:07:18.765 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+2019-10-31 18:07:19.323 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8475726c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 18:07:19.868 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 15001 (http)
+2019-10-31 18:07:19.887 [main] INFO  org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-15001"]
+2019-10-31 18:07:19.899 [main] INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2019-10-31 18:07:19.899 [main] INFO  org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-31 18:07:20.010 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2019-10-31 18:07:20.011 [main] INFO  org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2368 ms
+2019-10-31 18:07:21.211 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 18:07:21.474 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 18:07:22.332 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2019-10-31 18:07:22.354 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-10-31 18:07:22.394 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2019-10-31 18:07:22.607 [main] INFO  org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-15001"]
+2019-10-31 18:07:22.647 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 15001 (http) with context path ''
+2019-10-31 18:07:22.651 [main] INFO  com.pan.love.LoveApplication : Started LoveApplication in 5.511 seconds (JVM running for 7.869)
+2019-10-31 18:08:53.413 [http-nio-15001-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-31 18:08:53.413 [http-nio-15001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2019-10-31 18:08:53.422 [http-nio-15001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet : Completed initialization in 9 ms
+2019-10-31 18:08:53.440 [http-nio-15001-exec-2] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:08:53.443 [http-nio-15001-exec-2] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/user/querykey:null
+2019-10-31 18:08:53.443 [http-nio-15001-exec-2] INFO  com.pan.love.framework.config.web.LoginInterceptor : 未登录，跳转到登录页面
+2019-10-31 18:08:53.461 [http-nio-15001-exec-1] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Circular view path [login]: would dispatch back to the current handler URL [/login] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)] with root cause
+javax.servlet.ServletException: Circular view path [login]: would dispatch back to the current handler URL [/login] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:210)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:148)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:317)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1372)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:97)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-10-31 18:11:29.014 [http-nio-15001-exec-4] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:11:47.306 [http-nio-15001-exec-4] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path://user/querykey:null
+2019-10-31 18:12:08.448 [http-nio-15001-exec-4] INFO  com.pan.love.framework.config.web.LoginInterceptor : 未登录，跳转到登录页面
+2019-10-31 18:12:17.541 [http-nio-15001-exec-6] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Circular view path [login]: would dispatch back to the current handler URL [/login] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)] with root cause
+javax.servlet.ServletException: Circular view path [login]: would dispatch back to the current handler URL [/login] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:210)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:148)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:317)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1372)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:97)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-10-31 18:12:41.157 [Thread-12] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-31 18:12:46.742 [main] INFO  com.pan.love.LoveApplication : Starting LoveApplication on LAPTOP-0G7456OC with PID 81692 (D:\sendi\git\project\love\target\classes started by 89362 in D:\sendi\git\project\love)
+2019-10-31 18:12:46.747 [main] DEBUG com.pan.love.LoveApplication : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-31 18:12:46.748 [main] INFO  com.pan.love.LoveApplication : No active profile set, falling back to default profiles: default
+2019-10-31 18:12:47.767 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 18:12:47.770 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 18:12:47.803 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+2019-10-31 18:12:48.224 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d4156aaf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 18:12:48.675 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 15001 (http)
+2019-10-31 18:12:48.689 [main] INFO  org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-15001"]
+2019-10-31 18:12:48.700 [main] INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2019-10-31 18:12:48.700 [main] INFO  org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-31 18:12:48.806 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2019-10-31 18:12:48.807 [main] INFO  org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1989 ms
+2019-10-31 18:12:49.741 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 18:12:49.937 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 18:12:50.559 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2019-10-31 18:12:50.579 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-10-31 18:12:50.619 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2019-10-31 18:12:50.793 [main] INFO  org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-15001"]
+2019-10-31 18:12:50.825 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 15001 (http) with context path ''
+2019-10-31 18:12:50.828 [main] INFO  com.pan.love.LoveApplication : Started LoveApplication in 4.57 seconds (JVM running for 6.207)
+2019-10-31 18:13:40.247 [http-nio-15001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-31 18:13:40.247 [http-nio-15001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2019-10-31 18:13:40.261 [http-nio-15001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet : Completed initialization in 14 ms
+2019-10-31 18:13:44.721 [http-nio-15001-exec-1] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:13:57.262 [http-nio-15001-exec-1] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path://user/querykey:null
+2019-10-31 18:16:57.649 [Thread-9] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-31 18:17:03.569 [main] INFO  com.pan.love.LoveApplication : Starting LoveApplication on LAPTOP-0G7456OC with PID 85104 (D:\sendi\git\project\love\target\classes started by 89362 in D:\sendi\git\project\love)
+2019-10-31 18:17:03.572 [main] DEBUG com.pan.love.LoveApplication : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-31 18:17:03.572 [main] INFO  com.pan.love.LoveApplication : No active profile set, falling back to default profiles: default
+2019-10-31 18:17:04.498 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 18:17:04.501 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 18:17:04.530 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2019-10-31 18:17:04.871 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$23b1c426] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 18:17:05.291 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 15001 (http)
+2019-10-31 18:17:05.306 [main] INFO  org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-15001"]
+2019-10-31 18:17:05.316 [main] INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2019-10-31 18:17:05.317 [main] INFO  org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-31 18:17:05.413 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2019-10-31 18:17:05.414 [main] INFO  org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1789 ms
+2019-10-31 18:17:06.302 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 18:17:06.485 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 18:17:07.077 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2019-10-31 18:17:07.092 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-10-31 18:17:07.123 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2019-10-31 18:17:07.280 [main] INFO  org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-15001"]
+2019-10-31 18:17:07.308 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 15001 (http) with context path ''
+2019-10-31 18:17:07.311 [main] INFO  com.pan.love.LoveApplication : Started LoveApplication in 4.237 seconds (JVM running for 6.037)
+2019-10-31 18:17:19.535 [http-nio-15001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-31 18:17:19.535 [http-nio-15001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2019-10-31 18:17:19.561 [http-nio-15001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet : Completed initialization in 25 ms
+2019-10-31 18:17:21.786 [http-nio-15001-exec-1] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:17:32.603 [http-nio-15001-exec-1] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path://user/querykey:123
+2019-10-31 18:17:45.712 [http-nio-15001-exec-1] ERROR c.p.l.framework.exception.GlobalExceptionHandler : 未知异常！原因是:
+org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:225)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:158)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:127)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:97)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-10-31 18:19:08.461 [http-nio-15001-exec-5] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:19:08.462 [http-nio-15001-exec-5] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path://user/querykey:123
+2019-10-31 18:19:08.462 [http-nio-15001-exec-5] ERROR c.p.l.framework.exception.GlobalExceptionHandler : 未知异常！原因是:
+org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/octet-stream' not supported
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:225)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:158)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:127)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:97)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-10-31 18:22:10.222 [http-nio-15001-exec-8] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:22:10.223 [http-nio-15001-exec-8] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path://user/querykey:123
+2019-10-31 18:22:10.252 [http-nio-15001-exec-8] INFO  c.pan.love.framework.config.redis.RedisCacheAspect : 开始使用缓存
+2019-10-31 18:22:10.253 [http-nio-15001-exec-8] INFO  c.pan.love.framework.config.redis.RedisCacheAspect : obj:QueryUserInVo(userName=小潘, loginName=xiaopan, phone=null, email=null)
+2019-10-31 18:22:10.254 [http-nio-15001-exec-8] INFO  c.pan.love.framework.config.redis.RedisCacheAspect : 生成的key[user:com.pan.love.system.service.impl.UserServiceImpl.queryUser_QueryUserInVo(userName=小潘, loginName=xiaopan, phone=null, email=null)]
+2019-10-31 18:22:10.270 [http-nio-15001-exec-8] INFO  c.pan.love.framework.config.redis.RedisCacheAspect : 缓存未调用，调用原方法,放入缓存
+2019-10-31 18:22:10.327 [http-nio-15001-exec-8] INFO  com.alibaba.druid.pool.DruidDataSource : {dataSource-1} inited
+2019-10-31 18:22:10.406 [http-nio-15001-exec-8] DEBUG com.pan.love.system.mapper.UserMapper.queryUser : ==>  Preparing: select user_id,user_name,login_name,phone,email,head_url,create_time,update_time from sys_user WHERE user_name=? and login_name=? 
+2019-10-31 18:22:10.422 [http-nio-15001-exec-8] DEBUG com.pan.love.system.mapper.UserMapper.queryUser : ==> Parameters: 小潘(String), xiaopan(String)
+2019-10-31 18:22:10.451 [http-nio-15001-exec-8] DEBUG com.pan.love.system.mapper.UserMapper.queryUser : <==      Total: 3
+2019-10-31 18:22:49.100 [http-nio-15001-exec-10] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:22:49.100 [http-nio-15001-exec-10] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/user/querykey:null
+2019-10-31 18:22:53.090 [http-nio-15001-exec-9] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:22:53.090 [http-nio-15001-exec-9] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/user/querykey:null
+2019-10-31 18:23:00.955 [http-nio-15001-exec-2] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:23:00.955 [http-nio-15001-exec-2] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/user/querykey:null
+2019-10-31 18:23:45.061 [http-nio-15001-exec-3] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:23:45.061 [http-nio-15001-exec-3] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/user/querykey:null
+2019-10-31 18:24:13.229 [http-nio-15001-exec-4] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:24:13.229 [http-nio-15001-exec-4] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/user/querykey:null
+2019-10-31 18:25:23.542 [http-nio-15001-exec-7] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:25:23.543 [http-nio-15001-exec-7] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path://user/querykey:123
+2019-10-31 18:25:23.543 [http-nio-15001-exec-7] INFO  c.pan.love.framework.config.redis.RedisCacheAspect : 开始使用缓存
+2019-10-31 18:25:23.544 [http-nio-15001-exec-7] INFO  c.pan.love.framework.config.redis.RedisCacheAspect : obj:QueryUserInVo(userName=null, loginName=null, phone=null, email=null)
+2019-10-31 18:25:23.544 [http-nio-15001-exec-7] INFO  c.pan.love.framework.config.redis.RedisCacheAspect : 生成的key[user:com.pan.love.system.service.impl.UserServiceImpl.queryUser_QueryUserInVo(userName=null, loginName=null, phone=null, email=null)]
+2019-10-31 18:25:23.544 [http-nio-15001-exec-7] INFO  c.pan.love.framework.config.redis.RedisCacheAspect : 缓存未调用，调用原方法,放入缓存
+2019-10-31 18:25:23.552 [http-nio-15001-exec-7] DEBUG com.pan.love.system.mapper.UserMapper.queryUser : ==>  Preparing: select user_id,user_name,login_name,phone,email,head_url,create_time,update_time from sys_user 
+2019-10-31 18:25:23.553 [http-nio-15001-exec-7] DEBUG com.pan.love.system.mapper.UserMapper.queryUser : ==> Parameters: 
+2019-10-31 18:25:23.555 [http-nio-15001-exec-7] DEBUG com.pan.love.system.mapper.UserMapper.queryUser : <==      Total: 3
+2019-10-31 18:25:26.187 [http-nio-15001-exec-8] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:25:26.187 [http-nio-15001-exec-8] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path://user/querykey:123
+2019-10-31 18:25:26.188 [http-nio-15001-exec-8] INFO  c.pan.love.framework.config.redis.RedisCacheAspect : 开始使用缓存
+2019-10-31 18:25:26.188 [http-nio-15001-exec-8] INFO  c.pan.love.framework.config.redis.RedisCacheAspect : obj:QueryUserInVo(userName=null, loginName=null, phone=null, email=null)
+2019-10-31 18:25:26.188 [http-nio-15001-exec-8] INFO  c.pan.love.framework.config.redis.RedisCacheAspect : 生成的key[user:com.pan.love.system.service.impl.UserServiceImpl.queryUser_QueryUserInVo(userName=null, loginName=null, phone=null, email=null)]
+2019-10-31 18:25:26.188 [http-nio-15001-exec-8] INFO  c.pan.love.framework.config.redis.RedisCacheAspect : 缓存存在
+2019-10-31 18:30:32.346 [Thread-10] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-31 18:30:32.350 [Thread-10] INFO  com.alibaba.druid.pool.DruidDataSource : {dataSource-1} closed
+2019-10-31 18:30:38.589 [main] INFO  com.pan.love.LoveApplication : Starting LoveApplication on LAPTOP-0G7456OC with PID 87068 (D:\sendi\git\project\love\target\classes started by 89362 in D:\sendi\git\project\love)
+2019-10-31 18:30:38.593 [main] DEBUG com.pan.love.LoveApplication : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-31 18:30:38.594 [main] INFO  com.pan.love.LoveApplication : No active profile set, falling back to default profiles: default
+2019-10-31 18:30:39.555 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 18:30:39.559 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 18:30:39.592 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-10-31 18:30:39.995 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d424eef0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 18:30:40.440 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 15001 (http)
+2019-10-31 18:30:40.458 [main] INFO  org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-15001"]
+2019-10-31 18:30:40.470 [main] INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2019-10-31 18:30:40.471 [main] INFO  org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-31 18:30:40.575 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2019-10-31 18:30:40.575 [main] INFO  org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1931 ms
+2019-10-31 18:30:41.634 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 18:30:41.892 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 18:30:42.586 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2019-10-31 18:30:42.607 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-10-31 18:30:42.637 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2019-10-31 18:30:42.780 [main] INFO  org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-15001"]
+2019-10-31 18:30:42.811 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 15001 (http) with context path ''
+2019-10-31 18:30:42.816 [main] INFO  com.pan.love.LoveApplication : Started LoveApplication in 4.643 seconds (JVM running for 6.554)
+2019-10-31 18:30:53.587 [http-nio-15001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-31 18:30:53.587 [http-nio-15001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2019-10-31 18:30:53.596 [http-nio-15001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet : Completed initialization in 9 ms
+2019-10-31 18:30:53.614 [http-nio-15001-exec-1] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:30:53.614 [http-nio-15001-exec-1] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/swagger-ui.htmlkey:null
+2019-10-31 18:32:20.245 [Thread-10] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-31 18:32:28.276 [main] INFO  com.pan.love.LoveApplication : Starting LoveApplication on LAPTOP-0G7456OC with PID 83844 (D:\sendi\git\project\love\target\classes started by 89362 in D:\sendi\git\project\love)
+2019-10-31 18:32:28.279 [main] DEBUG com.pan.love.LoveApplication : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-31 18:32:28.280 [main] INFO  com.pan.love.LoveApplication : No active profile set, falling back to default profiles: default
+2019-10-31 18:32:29.339 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 18:32:29.342 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 18:32:29.373 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2019-10-31 18:32:29.831 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d430fecc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 18:32:30.348 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 15001 (http)
+2019-10-31 18:32:30.362 [main] INFO  org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-15001"]
+2019-10-31 18:32:30.371 [main] INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2019-10-31 18:32:30.371 [main] INFO  org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-31 18:32:30.511 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2019-10-31 18:32:30.513 [main] INFO  org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2171 ms
+2019-10-31 18:32:31.490 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 18:32:31.697 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 18:32:32.440 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2019-10-31 18:32:32.461 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-10-31 18:32:32.500 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2019-10-31 18:32:32.685 [main] INFO  org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-15001"]
+2019-10-31 18:32:32.718 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 15001 (http) with context path ''
+2019-10-31 18:32:32.721 [main] INFO  com.pan.love.LoveApplication : Started LoveApplication in 5.072 seconds (JVM running for 7.32)
+2019-10-31 18:32:39.294 [http-nio-15001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-31 18:32:39.294 [http-nio-15001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2019-10-31 18:32:39.309 [http-nio-15001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet : Completed initialization in 15 ms
+2019-10-31 18:32:39.517 [http-nio-15001-exec-2] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:32:39.517 [http-nio-15001-exec-2] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/swagger-resources/configuration/uikey:null
+2019-10-31 18:32:39.523 [http-nio-15001-exec-3] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:32:39.523 [http-nio-15001-exec-3] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/webjars/springfox-swagger-ui/favicon-32x32.pngkey:null
+2019-10-31 18:32:44.306 [http-nio-15001-exec-4] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:32:44.306 [http-nio-15001-exec-4] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/webjars/springfox-swagger-ui/favicon-16x16.pngkey:null
+2019-10-31 18:33:22.238 [http-nio-15001-exec-6] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:33:22.239 [http-nio-15001-exec-6] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/null/swagger-resources/configuration/uikey:null
+2019-10-31 18:33:24.822 [Thread-10] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-31 18:33:30.736 [main] INFO  com.pan.love.LoveApplication : Starting LoveApplication on LAPTOP-0G7456OC with PID 86752 (D:\sendi\git\project\love\target\classes started by 89362 in D:\sendi\git\project\love)
+2019-10-31 18:33:30.741 [main] DEBUG com.pan.love.LoveApplication : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-31 18:33:30.741 [main] INFO  com.pan.love.LoveApplication : No active profile set, falling back to default profiles: default
+2019-10-31 18:33:31.783 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 18:33:31.786 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 18:33:31.820 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2019-10-31 18:33:32.219 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$11a0c831] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 18:33:32.663 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 15001 (http)
+2019-10-31 18:33:32.679 [main] INFO  org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-15001"]
+2019-10-31 18:33:32.689 [main] INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2019-10-31 18:33:32.689 [main] INFO  org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-31 18:33:32.784 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2019-10-31 18:33:32.784 [main] INFO  org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1981 ms
+2019-10-31 18:33:33.676 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 18:33:33.873 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 18:33:34.489 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2019-10-31 18:33:34.508 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-10-31 18:33:34.536 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2019-10-31 18:33:34.687 [main] INFO  org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-15001"]
+2019-10-31 18:33:34.726 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 15001 (http) with context path ''
+2019-10-31 18:33:34.729 [main] INFO  com.pan.love.LoveApplication : Started LoveApplication in 4.475 seconds (JVM running for 6.174)
+2019-10-31 18:33:39.668 [http-nio-15001-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-31 18:33:39.668 [http-nio-15001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2019-10-31 18:33:39.678 [http-nio-15001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet : Completed initialization in 10 ms
+2019-10-31 18:33:39.697 [http-nio-15001-exec-2] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:33:39.697 [http-nio-15001-exec-3] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:33:39.698 [http-nio-15001-exec-2] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/swagger-ui.htmlkey:null
+2019-10-31 18:33:39.698 [http-nio-15001-exec-3] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/null/swagger-resources/configuration/uikey:null
+2019-10-31 18:33:40.707 [http-nio-15001-exec-4] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:33:40.707 [http-nio-15001-exec-1] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:33:40.707 [http-nio-15001-exec-4] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/null/swagger-resources/configuration/uikey:null
+2019-10-31 18:33:40.707 [http-nio-15001-exec-1] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/swagger-ui.htmlkey:null
+2019-10-31 18:33:42.048 [http-nio-15001-exec-5] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:33:42.048 [http-nio-15001-exec-5] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/null/swagger-resources/configuration/uikey:null
+2019-10-31 18:33:43.533 [http-nio-15001-exec-6] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:33:43.533 [http-nio-15001-exec-6] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/swagger-ui.htmlkey:null
+2019-10-31 18:33:44.733 [http-nio-15001-exec-9] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:33:44.733 [http-nio-15001-exec-9] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/swagger-ui.htmlkey:null
+2019-10-31 18:33:45.564 [http-nio-15001-exec-3] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:33:45.564 [http-nio-15001-exec-3] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/swagger-ui.htmlkey:null
+2019-10-31 18:33:45.804 [http-nio-15001-exec-1] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:33:45.804 [http-nio-15001-exec-1] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/swagger-ui.htmlkey:null
+2019-10-31 18:33:46.006 [http-nio-15001-exec-5] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:33:46.006 [http-nio-15001-exec-5] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/swagger-ui.htmlkey:null
+2019-10-31 18:33:46.317 [http-nio-15001-exec-6] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:33:46.317 [http-nio-15001-exec-6] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/swagger-ui.htmlkey:null
+2019-10-31 18:33:46.511 [http-nio-15001-exec-9] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:33:46.511 [http-nio-15001-exec-9] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/swagger-ui.htmlkey:null
+2019-10-31 18:34:14.549 [Thread-9] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-31 18:34:20.218 [main] INFO  com.pan.love.LoveApplication : Starting LoveApplication on LAPTOP-0G7456OC with PID 85652 (D:\sendi\git\project\love\target\classes started by 89362 in D:\sendi\git\project\love)
+2019-10-31 18:34:20.222 [main] DEBUG com.pan.love.LoveApplication : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-31 18:34:20.223 [main] INFO  com.pan.love.LoveApplication : No active profile set, falling back to default profiles: default
+2019-10-31 18:34:21.155 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 18:34:21.157 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 18:34:21.183 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2019-10-31 18:34:21.530 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$66807024] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 18:34:22.004 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 15001 (http)
+2019-10-31 18:34:22.019 [main] INFO  org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-15001"]
+2019-10-31 18:34:22.030 [main] INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2019-10-31 18:34:22.030 [main] INFO  org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-31 18:34:22.152 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2019-10-31 18:34:22.153 [main] INFO  org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1887 ms
+2019-10-31 18:34:23.084 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 18:34:23.287 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 18:34:23.910 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2019-10-31 18:34:23.928 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-10-31 18:34:23.962 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2019-10-31 18:34:24.107 [main] INFO  org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-15001"]
+2019-10-31 18:34:24.137 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 15001 (http) with context path ''
+2019-10-31 18:34:24.139 [main] INFO  com.pan.love.LoveApplication : Started LoveApplication in 4.309 seconds (JVM running for 6.109)
+2019-10-31 18:34:30.131 [http-nio-15001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-31 18:34:30.131 [http-nio-15001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2019-10-31 18:34:30.139 [http-nio-15001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet : Completed initialization in 8 ms
+2019-10-31 18:34:30.157 [http-nio-15001-exec-1] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:34:30.158 [http-nio-15001-exec-1] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/swagger-ui.htmlkey:null
+2019-10-31 18:34:31.423 [http-nio-15001-exec-3] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:34:31.423 [http-nio-15001-exec-3] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/swagger-ui.htmlkey:null
+2019-10-31 18:34:31.653 [http-nio-15001-exec-6] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:34:31.653 [http-nio-15001-exec-6] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/swagger-ui.htmlkey:null
+2019-10-31 18:34:31.879 [http-nio-15001-exec-7] INFO  com.pan.love.framework.config.web.LoginInterceptor : 进入登录拦截器
+2019-10-31 18:34:31.879 [http-nio-15001-exec-7] INFO  com.pan.love.framework.config.web.LoginInterceptor : basePath:path:/swagger-ui.htmlkey:null
+2019-10-31 19:51:01.898 [Thread-10] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'

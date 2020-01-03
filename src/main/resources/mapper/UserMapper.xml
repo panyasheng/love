@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pan.love.system.mapper.UserMapper">
+    <insert id="addUser" parameterType="com.pan.love.system.bean.vo.AddUserVo">
+        insert into sys_user(user_name,login_name,password,phone,email,head_url,create_time,update_time)
+        values(
+            #{userName},
+            #{loginName},
+            #{password},
+            #{phone},
+            #{email},
+            #{headUrl},
+            #{createTime},
+            #{updateTime}
+        )
+    </insert>
+
+    <delete id="deleteUser" parameterType="java.lang.String">
+        delete from sys_user where user_id in
+        <foreach collection="listId" item="userId" separator="," open="(" close=")" >
+            #{userId}
+        </foreach>
+    </delete>
+
+    <update id="updateUser" parameterType="com.pan.love.system.bean.vo.UpdateUserVO">
+        update sys_user set user_name=#{userName},
+            phone=#{phone},
+            email=#{email},
+            headUrl=#{headUrl},
+            updateTime=#{updateTime}
+    </update>
+
+    <resultMap id="queryUserMap" type="com.pan.love.system.bean.vo.QueryUserOutVo">
+        <id column="user_id" property="userId"></id>
+        <result column="user_name" property="userName"></result>
+        <result column="login_name" property="loginName"></result>
+        <result column="phone" property="phone"></result>
+        <result column="email" property="email"></result>
+        <result column="head_url" property="headUrl"></result>
+        <result column="create_time" property="createTime"></result>
+        <result column="update_time" property="updateTime"></result>
+    </resultMap>
+
+    <select id="queryUser" parameterType="com.pan.love.system.bean.vo.QueryUserInVo"
+    resultMap="queryUserMap">
+        select user_id,user_name,login_name,phone,email,head_url,create_time,update_time
+        from sys_user
+        <where>
+            <if test="userName !=null and userName !=''">
+                and user_name=#{userName}
+            </if>
+            <if test="loginName !=null and loginName !=''">
+                and login_name=#{loginName}
+            </if>
+            <if test="phone !=null and phone !=''">
+                and phone=#{phone}
+            </if>
+            <if test="email !=null and email !=''">
+                and email=#{email}
+            </if>
+        </where>
+    </select>
+</mapper>

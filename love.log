@@ -1,0 +1,146 @@
+2019-10-31 11:46:43.808  INFO 34288 --- [main] com.pan.love.LoveApplication             : Starting LoveApplication on LAPTOP-0G7456OC with PID 34288 (D:\sendi\git\project\love\target\classes started by 89362 in D:\sendi\git\project\love)
+2019-10-31 11:46:43.811 DEBUG 34288 --- [main] com.pan.love.LoveApplication             : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-31 11:46:43.812  INFO 34288 --- [main] com.pan.love.LoveApplication             : No active profile set, falling back to default profiles: default
+2019-10-31 11:46:44.886  INFO 34288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 11:46:44.889  INFO 34288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 11:46:44.918  INFO 34288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-10-31 11:46:45.318  INFO 34288 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$25f52303] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 11:46:45.790  INFO 34288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 15001 (http)
+2019-10-31 11:46:45.813  INFO 34288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-31 11:46:45.813  INFO 34288 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-31 11:46:45.910  INFO 34288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-31 11:46:45.910  INFO 34288 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2044 ms
+2019-10-31 11:46:46.723  INFO 34288 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 11:46:46.862  INFO 34288 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 11:46:47.342  INFO 34288 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-10-31 11:46:47.355  INFO 34288 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-10-31 11:46:47.378  INFO 34288 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-10-31 11:46:47.507  INFO 34288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 15001 (http) with context path ''
+2019-10-31 11:46:47.509  INFO 34288 --- [main] com.pan.love.LoveApplication             : Started LoveApplication in 4.18 seconds (JVM running for 5.518)
+2019-10-31 11:47:46.423  INFO 34288 --- [http-nio-15001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-31 11:47:46.423  INFO 34288 --- [http-nio-15001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-31 11:47:46.431  INFO 34288 --- [http-nio-15001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-10-31 11:48:49.933  INFO 34288 --- [http-nio-15001-exec-9] c.p.l.f.config.redis.RedisCacheAspect    : 开始使用缓存
+2019-10-31 11:48:49.935  INFO 34288 --- [http-nio-15001-exec-9] c.p.l.f.config.redis.RedisCacheAspect    : obj:QueryUserInVo(userName=string, loginName=null, phone=null, email=null)
+2019-10-31 11:48:49.935  INFO 34288 --- [http-nio-15001-exec-9] c.p.l.f.config.redis.RedisCacheAspect    : 生成的key[user:com.pan.love.system.service.impl.UserServiceImpl.queryUser_QueryUserInVo(userName=string, loginName=null, phone=null, email=null)]
+2019-10-31 11:48:50.962 ERROR 34288 --- [http-nio-15001-exec-9] c.p.l.f.e.GlobalExceptionHandler         : 未知异常！原因是:
+
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.3.jar:na]
+	at com.pan.love.framework.config.redis.JedisClientPool.exists(JedisClientPool.java:61) ~[classes/:na]
+	at com.pan.love.framework.config.redis.RedisCacheAspect.redisCache(RedisCacheAspect.java:66) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633) ~[spring-aop-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175) ~[spring-aop-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) ~[spring-aop-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689) ~[spring-aop-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at com.pan.love.system.service.impl.UserServiceImpl$$EnhancerBySpringCGLIB$$d175a00c.queryUser(<generated>) ~[classes/:na]
+	at com.pan.love.system.controller.UserController.queryUser(UserController.java:65) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:97) [spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94) [spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host localhost:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:207) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:101) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1844) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106) ~[jedis-2.9.3.jar:na]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.3.jar:na]
+	... 74 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at redis.clients.jedis.Connection.connect(Connection.java:184) ~[jedis-2.9.3.jar:na]
+	... 81 common frames omitted
+
+2019-10-31 11:50:30.694  INFO 34288 --- [http-nio-15001-exec-1] c.p.l.f.config.redis.RedisCacheAspect    : 开始使用缓存
+2019-10-31 11:50:30.695  INFO 34288 --- [http-nio-15001-exec-1] c.p.l.f.config.redis.RedisCacheAspect    : obj:QueryUserInVo(userName=string, loginName=null, phone=null, email=null)
+2019-10-31 11:50:30.695  INFO 34288 --- [http-nio-15001-exec-1] c.p.l.f.config.redis.RedisCacheAspect    : 生成的key[user:com.pan.love.system.service.impl.UserServiceImpl.queryUser_QueryUserInVo(userName=string, loginName=null, phone=null, email=null)]
+2019-10-31 11:50:30.705  INFO 34288 --- [http-nio-15001-exec-1] c.p.l.f.config.redis.RedisCacheAspect    : 缓存未调用，调用原方法,放入缓存
+2019-10-31 11:50:30.776  INFO 34288 --- [http-nio-15001-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-10-31 11:50:30.889 DEBUG 34288 --- [http-nio-15001-exec-1] c.p.l.s.mapper.UserMapper.queryUser      : ==>  Preparing: select user_id,user_name,login_name,phone,email,head_url,create_time,update_time from sys_user WHERE user_name=? 
+2019-10-31 11:50:30.905 DEBUG 34288 --- [http-nio-15001-exec-1] c.p.l.s.mapper.UserMapper.queryUser      : ==> Parameters: string(String)
+2019-10-31 11:50:30.936 DEBUG 34288 --- [http-nio-15001-exec-1] c.p.l.s.mapper.UserMapper.queryUser      : <==      Total: 0
+2019-10-31 11:51:17.692  INFO 34288 --- [http-nio-15001-exec-2] c.p.l.f.config.redis.RedisCacheAspect    : 开始使用缓存
+2019-10-31 11:51:17.693  INFO 34288 --- [http-nio-15001-exec-2] c.p.l.f.config.redis.RedisCacheAspect    : obj:QueryUserInVo(userName=string, loginName=null, phone=null, email=null)
+2019-10-31 11:51:17.693  INFO 34288 --- [http-nio-15001-exec-2] c.p.l.f.config.redis.RedisCacheAspect    : 生成的key[user:com.pan.love.system.service.impl.UserServiceImpl.queryUser_QueryUserInVo(userName=string, loginName=null, phone=null, email=null)]
+2019-10-31 11:51:17.693  INFO 34288 --- [http-nio-15001-exec-2] c.p.l.f.config.redis.RedisCacheAspect    : 缓存存在
+2019-10-31 11:51:53.360  INFO 34288 --- [http-nio-15001-exec-3] c.p.l.f.config.redis.RedisCacheAspect    : 开始使用缓存
+2019-10-31 11:51:53.360  INFO 34288 --- [http-nio-15001-exec-3] c.p.l.f.config.redis.RedisCacheAspect    : obj:QueryUserInVo(userName=string, loginName=null, phone=null, email=null)
+2019-10-31 11:51:53.360  INFO 34288 --- [http-nio-15001-exec-3] c.p.l.f.config.redis.RedisCacheAspect    : 生成的key[user:com.pan.love.system.service.impl.UserServiceImpl.queryUser_QueryUserInVo(userName=string, loginName=null, phone=null, email=null)]
+2019-10-31 11:51:53.360  INFO 34288 --- [http-nio-15001-exec-3] c.p.l.f.config.redis.RedisCacheAspect    : 缓存未调用，调用原方法,放入缓存
+2019-10-31 11:51:53.366 DEBUG 34288 --- [http-nio-15001-exec-3] c.p.l.s.mapper.UserMapper.queryUser      : ==>  Preparing: select user_id,user_name,login_name,phone,email,head_url,create_time,update_time from sys_user WHERE user_name=? 
+2019-10-31 11:51:53.366 DEBUG 34288 --- [http-nio-15001-exec-3] c.p.l.s.mapper.UserMapper.queryUser      : ==> Parameters: string(String)
+2019-10-31 11:51:53.367 DEBUG 34288 --- [http-nio-15001-exec-3] c.p.l.s.mapper.UserMapper.queryUser      : <==      Total: 0
+2019-10-31 15:04:13.239  INFO 34288 --- [Thread-10] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-31 15:04:13.244  INFO 34288 --- [Thread-10] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
